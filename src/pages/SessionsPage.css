@@ -1,0 +1,6 @@
+/* Session Page Styles */
+.sessions-page { padding: 1rem; }
+.filters { display: flex; gap: 10px; margin-bottom: 2rem; overflow-x: auto;}
+.filter-btn { padding: 8px 16px; background: rgba(255,255,255,0.05); border-radius: 20px;}
+.filter-btn.active { background: var(--accent-color); }
+.sessions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }

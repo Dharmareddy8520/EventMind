@@ -1,0 +1,44 @@
+/* Map Page Styles */
+.map-page { padding: 1rem; height: calc(100vh - 120px); display: flex; flex-direction: column; }
+.map__header { margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: flex-end; }
+.page__title { font-size: 2rem; margin: 0 0 0.5rem 0; }
+.page__subtitle { color: var(--text-muted); margin: 0; }
+
+.map__legend { display: flex; gap: 16px; margin-top: 1rem; }
+.legend__item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); }
+.legend__dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.map__layout { display: flex; gap: 24px; flex: 1; min-height: 0; }
+
+.rooms__list { width: 320px; display: flex; flex-direction: column; gap: 12px; overflow-y: auto; padding-right: 8px; }
+.rooms__list::-webkit-scrollbar { width: 6px; }
+.rooms__list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+
+.room__item { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 16px; border-radius: 12px; cursor: pointer; text-align: left; color: inherit; transition: all 0.2s ease; position: relative; }
+.room__item:hover { background: rgba(255,255,255,0.08); }
+.room__item--active { background: rgba(91, 79, 233, 0.15); border-color: var(--accent-color); }
+.room__icon { font-size: 1.5rem; }
+.room__info { flex: 1; }
+.room__name { font-weight: 600; margin-bottom: 4px; }
+.room__desc { font-size: 0.8rem; color: var(--text-muted); }
+.room__type-dot { position: absolute; right: 16px; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+
+.map__main { flex: 1; border-radius: 16px; overflow: hidden; position: relative; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02); display: flex; flex-direction: column; }
+.map__container { flex: 1; width: 100%; height: 100%; position: relative; }
+.map__google { width: 100%; height: 100%; }
+
+.room__detail { position: absolute; bottom: 24px; left: 24px; width: 360px; background: rgba(20,20,30,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.4); z-index: 10; }
+.detail__header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; position: relative; }
+.detail__icon { font-size: 2rem; }
+.detail__name { margin: 0 0 4px 0; font-size: 1.2rem; }
+.detail__desc { margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; }
+.detail__close { position: absolute; top: -8px; right: -8px; background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
+.detail__close:hover { color: white; }
+
+.detail__sessions { margin-bottom: 20px; }
+.detail__sessions-title { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px 0; }
+.detail__sessions-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.detail__session-item { font-size: 0.9rem; display: flex; gap: 8px; color: #e0e0e0; }
+
+.btn__directions { width: 100%; padding: 12px; background: var(--accent-color); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.2s; }
+.btn__directions:hover { background: #4a3ec2; }

@@ -1,0 +1,70 @@
+.onboarding-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+}
+
+.onboarding-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.progress-bar {
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.step-content h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.options-grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.option-btn {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-main);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+.option-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.option-btn.selected {
+  background: rgba(91, 79, 233, 0.2);
+  border-color: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.mt-4 {
+  margin-top: 1rem;
+  width: 100%;
+}
